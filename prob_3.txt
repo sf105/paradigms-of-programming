@@ -1,0 +1,5 @@
+In this iteration, we add the operations pageUp and pageDown. The pageUp operation moves the window up windowSize elements so that it is just above it's previous first element.  When the operation is complete, no element which was visible in the window before is visible in the window afterward.  If pageUp can not go up windowSize elements because it hits the top of the list, it stops at its last possble move up.
+
+The current selection after a pageUp is the last element in the window.
+
+The pageDown operation has the exact opposite behavior.  It moves the window downward.  When a pageDown finishes, the current selection is the top element of of the window.

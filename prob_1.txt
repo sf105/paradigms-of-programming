@@ -1,0 +1,5 @@
+Now that we have a rudimentary listbox, we have to start to make it a bit more realistic.  In our listbox, we will introduced the concept of the "window."  The window is the portion of the listbox which is currently displayed on the graphical user interface.  Imagine a listbox with 100 elements. The window might be the set of elements in the range [10..19].
+
+In this iteration, you will have to change the system so that the current selection moves within this window.  The arrowUp and arrowDown operations have special behavior at the top and bottom of the window -- they move it.  For example, if the window is at [10..19] in a list, and the current selection is 10, an arrowDown operation will change the current selection to 11.  On the other hand, an arrowUp operation will change the the current selection to 9 and shift the window up, giving it the range [9..18].
+
+In this iteration, it is sufficient to add behavior for windows in the center of the list.  You do not have to deal with the cases where the window touches the top or bottom of the list yet.

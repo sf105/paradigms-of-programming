@@ -1,0 +1,9 @@
+
+The problem for this exercise is a listbox controller in a graphical user interface. You have to write code which accepts a list of items for the listbox and changes the currently selected item in the list. 
+
+When the listbox is initialized, the current selection is the first element in the list.  Two operations: arrowUp and arrowDown allow you to change the position of the current selection.  If you arrowUp when the first element of the list is selected, it is a no-op.  Likewise, it is  a no-op if you arrowDown when the last element of the list is selected.  
+
+If the controller is given an empty list, there is no currently selected item.
+
+In later iterations, we will expand this behavior to make it more interesting.
+

@@ -1,0 +1,13 @@
+Design a controller for a list box in a graphical user interface.  The listbox should operate upon a list [0..n] of text items.  A list box has a window which consists of the sublist of text items which is currently being displayed, and a selection which consists of a single highlighted item within the window.
+
+In this controller, the window is never larger than the size of the list, but the list may be much larger than the window.  If the list is not empty, there is always a selection.  On start up, the selection is the first item in the list. The selection is a item which is highlighted within the window.  The window has ten elements if the size of the list is ten or more.  If the list has fewer elements, the window has the size as the list.
+
+Arrow-up - unselect the selection and select the item above it. If the selection was at the top of the window, the window should be shifted up by one.
+
+Arrow-down - unselect the selection and select the item below it.  If the selection was at the bottom of the window, the window should be shifted down by one.
+
+Page-up - move the window up by window-size elements.  Select the bottom item in the window.
+
+Page-down - move the window down by window-size elements.  Select the top item in the window.
+
+If an arrow-up or arrow-down operation can not be performed because there is no higher or lower item, the state of the list box is left unchanged.  If a page-up or page-down operation attempts to move beyond the range of the list it must go only as far as it can and then stop.

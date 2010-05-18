@@ -1,0 +1,22 @@
+
+Start with exposition of paradigms
+
+Within the World Cafe 
+- each table one paper and code for the paradigm.
+- ppl attempt the problem
+- one person stays.. others move.  Person who stays explains 
+  to the next group.
+- Do several moves
+After world cafe
+- General discussion
+- Present some examples in mainstream languages.
+
+Object-oriented (actor)
+Functional, 
+Rule-Based, 
+Procedural
+
+
+Introduction  00
+First Round   15
+

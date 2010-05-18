@@ -1,0 +1,5 @@
+In this iteration, we introduce behavior at the edges.  An arrowUp operation at the top of the window when the window is [0..x] for some x is a no op.  An arrowDown operation at the bottom of the window when the window is [x..last] for some x is a no op also.
+
+In this iteration, we also calculate the size of the window.  By default, the size of the window is 10 and it starts at the first element of the list (0).  However, if the size of the list is less than 10, the size of the window becomes the size of the list.
+
+Take time in this iteration to refactor your solution. Become as comfortable with it as you can.

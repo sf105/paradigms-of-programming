@@ -1,0 +1,21 @@
+The rule-based programming paradigm has many variants.  The one we choose to highlight defines a program as a set of rules which iteratively transform a data set until a particular result is reached.  The power of the rule paradigm is that it allows work to be done without specifying an explicit flow of a control.  The rules are all equal and they they may match in any order.  This turns design into the process of creating and articulating a set of rules which unambiguously reach particular results.  One of the primary concerns in rule based system design is the creation of rules which will fire only in particular situations.  Designers must  think about the context of application for many of their rules and treat the system as a large state machine in which there are a rich enough set of transitions to reach an appropriate result.
+
+There are many rule based programming languages (OPS5, CLIPS, etc), however in non-rule based languages, rules are often modeled as data structures subject to a matching operation.
+
+Rule based systems are seeded with facts, like the following:
+
+(customer "Fred" (credit-limit 5000))
+(customer "Sally" (credit-limit 1500))
+(invoice "Fred" (amount 2000))
+(invoice "Fred" (amount 1000))
+
+There are also rules. Every rule is a series of conjunctions or disjunctions with an associated consequent.  The consequent is an imperative action which asserts new facts, revokes facts or modifies them.
+
+-- If there is an invoice with an amount greater than or equal to 2000 change the corresponding customer's credit limit to 2000
+(rule1
+  (invoice ?name (amount >=2000))
+  => (customer ?name (credit-limit 2000)
+)
+
+In this exercise, you may assume that all the rule engine runs iteratively on a set of facts until the set of facts is unchanged or a rule tells the engine to abort.
+

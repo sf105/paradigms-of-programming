@@ -40,11 +40,9 @@ public class ListBoxModel {
 	}
 	
 	public static ListBoxModel iterate(ModelFunction function, ListBoxModel model, Integer count) {
-		ListBoxModel iterated = model;
-		for(int n = 0; n < count; n++) {
-			iterated = function.apply(iterated);
-		}
-		return iterated;
+	  return count == 0 
+	    ? model
+	    : iterate(function, function.apply(model), count - 1);
 	}
 	
 	public static ListBoxModel pageWith(ModelFunction step, ListBoxModel model) {

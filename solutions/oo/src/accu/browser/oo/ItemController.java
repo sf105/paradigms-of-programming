@@ -16,20 +16,13 @@ public class ItemController {
   }
 
   public void downArrow() {
-    arrow(Down);
+    selection.arrow(Down);
   }
 
   public void upArrow() {
-    arrow(Up);
+    selection.arrow(Up);
   }
 
-  private void arrow(Direction direction) {
-    if (selection.movedIn(direction)) {
-      selection.show();
-    }
-  }
-  
- 
   static class Selection extends Location {
     private final View view;
     private final VisibleRange visibleRange;
@@ -44,6 +37,11 @@ public class ItemController {
     }
     public void show() {
       view.show(visibleRange.retrieveItems(), offset.value);
+    }
+    public void arrow(Direction direction) {
+      if (movedIn(direction)) {
+        show();
+      }
     }
   }
   

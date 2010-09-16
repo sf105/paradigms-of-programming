@@ -1,12 +1,12 @@
 There are many ways to look at the object oriented paradigm, and in fact, the diversity of design approaches which fall under than banner is the direct result of people seeing OO differently at its inception.
 
-The “simulation” view of OO is that objects are analogs of real world concepts or entities. We leverage OO to the degree that we are able to model them in software.  
+The "simulation" view of OO is that objects are analogs of real world concepts or entities. We leverage OO to the degree that we are able to model them in software.  
 
-The “data modeling” view of OO sees objects as an extension of entities in entity relationship diagrams.  We leverage OO to the degree that we are able to make objects which align with the structure of the data we need to manage in our applications.
+The "data modeling" view of OO sees objects as an extension of entities in entity relationship diagrams.  We leverage OO to the degree that we are able to make objects which align with the structure of the data we need to manage in our applications.
 
-The “computer science” view of OO sees objects as abstract data types which are are natural extensions of the primitive types we have in programming languages.  An Account is like an integer with higher level operations and a bit more state.
+The "computer science" view of OO sees objects as abstract data types which are are natural extensions of the primitive types we have in programming languages.  An Account is like an integer with higher level operations and a bit more state.
 
-The “actor” view of OO sees objects as things which communicate with each other via messages much like cells do in biological systems. We leverage OO by favoring messages which tell rather than ask.  When we do this we arrive at systems which are extremely decoupled. 
+The "actor" view of OO sees objects as things which communicate with each other via messages much like cells do in biological systems. We leverage OO by favoring messages which tell rather than ask.  When we do this we arrive at systems which are extremely decoupled. 
 
 In this workshop, we adopt the actor view to distinguish OO from the other paradigms.  Objects are not just packets of data and behavior bundled together, they are maximally independent nodes in a network.  Triggering events at one end of the network lead objects to send messages to each other until, at some point, messages are sent out of the network to have an effect on the world.
 
